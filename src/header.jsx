@@ -48,7 +48,7 @@ class Header extends React.Component{
                 </a>
                 <a
                   target="_blank"
-                  href="resume_henry.pdf"
+                  href="Resume_Henry_Ryu_.pdf"
                   aria-label="resume"
                   data-balloon-pos="down"
                 >
