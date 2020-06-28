@@ -17,6 +17,11 @@
     margin: auto;
     margin-bottom: 15px;
 }
+.profile-image img {
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
 
 .profile-name {
     font-size: 3rem;

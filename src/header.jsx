@@ -11,11 +11,13 @@ class Header extends React.Component{
           <div className="header">
             <div className="header-container">
               <div className="profile-image">
-                <img src="profile.png" alt="" />
+                <img src={process.env.PUBLIC_URL + '/profile.png'} alt="profile.png"/>
               </div>
               <div className="profile-name">Henry Ryu</div>
               <div className="profile-details">
-                SF-based software developer trained in React, Redux, Node.js, Express.js, Ruby on Rails, PostgreSQL, JavaScript, CSS and HTML5.
+                SF-based software developer trained in React, Redux, Node.js,
+                Express.js, Ruby on Rails, PostgreSQL, JavaScript, CSS and
+                HTML5.
               </div>
               <div className="profile-socials">
                 <a
