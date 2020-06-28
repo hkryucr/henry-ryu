@@ -4,13 +4,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 import MainContentsProject from './main_contents_project';
 import LastProject from "./last_project";
+import Toggle from "./components/Toggler";
 
 class Main extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-          tabNumber: 0
+          tabNumber: 0,
+          darkMode: false
         };
+        this.switchClick = this.switchClick.bind(this);
     }
 
     getInput (number){
@@ -79,12 +82,26 @@ class Main extends React.Component {
       }
     }
 
+    switchClick(e){
+      e.preventDefault();
+      this.props.themeToggler();
+      this.setState({ darkMode: !this.state.darkMode });
+    }
+
     render() {
       const input = this.getInput(this.state.tabNumber);
       return (
         <div className="main">
           <div className="main-container">
-            <div className="main-title">Latest Projects</div>
+            <div className="main-title">
+              <div>Latest Projects</div>
+              <Toggle
+                theme={this.props.theme}
+                themeToggler={this.props.themeToggler}
+                innerText={this.state.darkMode ? "Light Mode" : "Night Mode"}
+                switchClick={this.switchClick}
+              />
+            </div>
             <div className="main-contents">
               <div className="main-contents-tabs">
                 <div
