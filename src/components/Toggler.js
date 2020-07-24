@@ -19,6 +19,7 @@ const toggleClick = (themeToggler, switchClick) => {
     switchClick(e);
   };
 };
+
 const Toggle = ({ theme, themeToggler, innerText, switchClick }) => {
   return <Button onClick={toggleClick(themeToggler, switchClick)}>{innerText}</Button>;
 };
