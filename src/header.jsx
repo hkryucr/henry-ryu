@@ -38,7 +38,7 @@ class Header extends React.Component{
                 </a>
                 <a
                   target="_blank"
-                  href="https://angel.co/hyokyung-ryu"
+                  href="https://angel.co/u/henry-ryu"
                   aria-label="angelist"
                   data-balloon-pos="down"
                 >
