@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b2bd7282f521e3f20eca092ed12adaf8",
+    "revision": "6dfe1e7388b4b7f2f9041ab94d554bba",
     "url": "/henry-ryu/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/henry-ryu/static/css/2.cf970047.chunk.css"
   },
   {
-    "revision": "98d6f05c163609773e9b",
+    "revision": "15cf8f5b7b076fb7d8dc",
     "url": "/henry-ryu/static/css/main.e086348e.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/henry-ryu/static/js/2.90532a8c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "98d6f05c163609773e9b",
-    "url": "/henry-ryu/static/js/main.1026e3cb.chunk.js"
+    "revision": "15cf8f5b7b076fb7d8dc",
+    "url": "/henry-ryu/static/js/main.715d7eac.chunk.js"
   },
   {
     "revision": "bb35dd14cd277ac1875c",
