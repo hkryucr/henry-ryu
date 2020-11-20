@@ -10,18 +10,33 @@ class Main extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-          tabNumber: 0,
+          tabNumber: -1,
           darkMode: false
         };
         this.switchClick = this.switchClick.bind(this);
     }
 
     getInput (number){
+      const input0 = {
+        title: "Trello Clone",
+        gitLink: "https://github.com/hkryucr/trello-clone",
+        liveLink: "https://trello2.herokuapp.com/",
+        stacks: "(Vue.js, Socket.io, Node.js, Express.js, MongoDB, JavaScript, CSS)",
+        info:
+          "Single-page full-stack web application modeled after Trello.",
+        infoFeatures: [
+          "Served as a project lead for a 4-person team developing a project, managing application, controlling Git workflow and leading system design while overseeing completion within 2 months time frame",
+          "Implemented fully responsive, device-agnostic front end web page using Vue.js, CSS flexbox, and media queries.",
+          "Utilized Socket.io to implement real-time communication between web clients and server.",
+          "Developed reusable, modular modal components for optimized front-end architecture and faster development workflow."
+        ],
+        imgUrl: "https://trello-clone-bg.s3-us-west-1.amazonaws.com/board_interface.gif",
+      };
       const input1 = {
         title: "Eat Together (Chicken Tinder)",
         gitLink: "https://github.com/hkryucr/mern-ct",
         liveLink: "https://lit-atoll-81167.herokuapp.com/",
-        stacks: "(Node.js, Express.js, MongDB, React/Flux, JavaScript, CSS)",
+        stacks: "(React.js, Node.js, Express.js, MongoDB, React/Flux, JavaScript, CSS)",
         info:
           "A web app to help groups match everyone's dietary preferences and location to restaurants and bars.",
         infoFeatures: [
@@ -64,7 +79,9 @@ class Main extends React.Component {
         imgUrl: "https://portfolio-henry.s3-us-west-1.amazonaws.com/Path_Finder.gif",
       };
 
-      if(number === 0){
+      if(number === -1){
+        return input0;
+      } else if(number === 0){
         return input1;
       } else if (number === 1){
         return input2;
@@ -104,6 +121,25 @@ class Main extends React.Component {
             </div>
             <div className="main-contents">
               <div className="main-contents-tabs">
+                <div
+                  className={`main-contents-tab ${
+                    this.state.tabNumber !== -1 ? "white" : null
+                  }`}
+                  onClick={this.handleClick(-1)}
+                >
+                  <div className="main-contents-tab-header">
+                    <span> Trello Clone</span>
+                    <FontAwesomeIcon
+                      icon={faAngleDoubleRight}
+                      color="#b0b0b0"
+                    />
+                  </div>
+                  <div className="main-contents-tab-content">
+                    <span>
+                      A clone app of Trello (web-based list-making applications), built on Vue.js, Socket.io, Express.js, Node.js
+                    </span>
+                  </div>
+                </div>
                 <div
                   className={`main-contents-tab ${
                     this.state.tabNumber !== 0 ? "white" : null
