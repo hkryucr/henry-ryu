@@ -72,7 +72,11 @@
 }
 
 .project-info-img-screenshot{
-    font-size: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.project-info-img-screenshot {
+    font-size: 1.1rem;
     margin-bottom: 1rem;
 }
 

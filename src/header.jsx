@@ -47,14 +47,6 @@ class Header extends React.Component{
                     color="blacks"
                   />
                 </a>
-                <a
-                  target="_blank"
-                  href="Resume_HenryRyu_2020.pdf"
-                  aria-label="resume"
-                  data-balloon-pos="down"
-                >
-                  <FontAwesomeIcon icon={faFile} size="2x" color="blacks" />
-                </a>
               </div>
             </div>
           </div>
