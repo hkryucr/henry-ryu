@@ -5,7 +5,7 @@
 .main-container {
     display: flex;
     width: 100%;
-    max-width: 1060px;
+    max-width: 1260px;
     margin: auto;
     flex-direction: column;
     box-sizing: border-box;
